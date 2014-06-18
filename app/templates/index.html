@@ -1,0 +1,56 @@
+<!doctype html>
+<html<% if (includeModernizr) { %> class="no-js"<% } %>>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title><%= appname %></title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <% if (includeModernizr) { %>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild --><% } %>
+  </head>
+  <body>
+
+    <div class="hero-unit">
+      <h1>'Allo, 'Allo!</h1>
+      <p>You now have</p>
+      <ul>
+        <li>HTML5 Boilerplate</li>
+        <li>Normalize CSS</li>
+        <% if (includeSass) { %>
+        <li>Sass</li>
+        <% } %>
+        <% if (includeModernizr) { %>
+        <li>Modernizr</li>
+        <% } %>
+        <% if (includeBourbon) { %>
+        <li>Bourbon</li>
+        <% } %>
+        <% if (includeUnderscore) { %>
+        <li>UnderscoreJS</li>
+        <% } %>
+      </ul>
+      <p>Don't forget to update your readme file!!</p>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <% if (includeUnderscore) { %>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <% } %>
+    <!-- endbower -->
+    <!-- endbuild -->
+  </body>
+</html>

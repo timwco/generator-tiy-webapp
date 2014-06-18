@@ -1,0 +1,38 @@
+{
+  "name": "generator-tiy-webapp",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "twhitacre/generator-tiy-webapp",
+  "author": {
+    "name": "Tim Whitacre",
+    "email": "tim@timw.co",
+    "url": "https://github.com/twhitacre"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "cheerio": "^0.16.0",
+    "wiredep": "^1.4.3",
+    "chalk": "~0.4.0",
+    "yosay": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
