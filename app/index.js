@@ -21,7 +21,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
-    this.log(yosay('Welcome to TIY App Generator. This is meant to get your feet wet with Yeomon, Bower & Gulp.'));
+    this.log(yosay('Welcome to TIY App Generator'));
     this.log(chalk.magenta('Out of the box I include HTML5 Boilerplate, Normalize, jQuery, and a gulpfile.js to build your app.'));
   }
 
