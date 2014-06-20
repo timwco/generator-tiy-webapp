@@ -15,7 +15,11 @@ This is a simple [Yeoman](http://yeoman.io/) generator based off the [Gulp Gener
 
 _* optional during setup_
 
-### Usage
+### Installation & Usage
+
+```sh
+npm install -g generator-tiy-webapp
+```
 
 This is used like any other Yeoman generator. Simply navigate to your new project folder and run:
 
@@ -28,26 +32,3 @@ There are a few specific tasks so feel free to check out the `gulpfile.js` but t
 * `gulp` - This will run the default and build your `dist` folder
 * `gulp watch` - Starts a server and watches for changes, also livereload
 * `gulp deploy` - Deploys your `dist` folder to a `gh-pages` branch as a subtree push
-
-
-### Installation
-
-Again since this will change frequently and does not include some tools it has not been published. This means you'll need to link it up manually.
-
-First, clone the repo.
-
-```sh
-git clone git@github.com:twhitacre/generator-tiy-webapp.git
-```
-
-Change to the directory
-
-```sh
-cd generator-tiy-webapp
-```
-
-Then link it so we can access it
-
-```sh
-npm link
-```
