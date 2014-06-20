@@ -27,7 +27,9 @@ There are a few specific tasks so feel free to check out the `gulpfile.js` but t
 
 * `gulp` - This will run the default and build your `dist` folder
 * `gulp watch` - Starts a server and watches for changes, also livereload
-* `gulp deploy` - Deploys your `dist` folder to a `gh-pages` branch
+* `gulp deploy` - Deploys your `dist` folder to a `gh-pages` branch*
+
+_* Since we are not pushing a subtree, this will push all of your `dist` folder and other files to your `gh-pages` branch. I'm looking for a better way, but for now that is what is happening._
 
 ### Installation
 

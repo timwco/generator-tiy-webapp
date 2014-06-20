@@ -2,7 +2,8 @@
 // generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
 
 // Set your Github Repo Here
-var gh_repo = "";
+// Example: git@github.com:twhitacre/generator-tiy-webapp.git
+var gh_repo = '';
 
 // Require your modules
 var gulp = require('gulp');
@@ -117,6 +118,6 @@ gulp.task('deploy', function() {
     gulp.src("./dist/**/*")
       .pipe(deploy(gh_repo, 'origin'));
   } else {
-    console.log('Oops!! You forgot to set your `gh_repo` variable in your gulpfile.js!');
+    console.log('Oops!! You forgot to set your `gh_repo` variable in your gulpfile.js! (line 6)');
   }
 });

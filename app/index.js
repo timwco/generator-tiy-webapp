@@ -21,7 +21,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
-    this.log(yosay('Welcome to TIY App Generator'));
+    this.log(yosay('Welcome to the TIY App Generator'));
     this.log(chalk.magenta('Out of the box I include HTML5 Boilerplate, Normalize, jQuery, and a gulpfile.js to build your app.'));
   }
 
@@ -83,15 +83,9 @@ AppGenerator.prototype.bower = function () {
   this.copy('bower.json', 'bower.json');
 };
 
-AppGenerator.prototype.bower = function () {
-  this.copy('bowerrc', '.bowerrc');
-};
 
 AppGenerator.prototype.editorConfig = function () {
   this.copy('editorconfig', '.editorconfig');
-};
-
-AppGenerator.prototype.editorConfig = function () {
   this.copy('Readme.md', 'Readme.md');
 };
 
