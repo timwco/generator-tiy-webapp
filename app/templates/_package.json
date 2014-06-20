@@ -26,7 +26,6 @@
   "opn": "^0.1.1",
   "rimraf": "^2.2.8",
   "streamqueue": "^0.1.1",
-  "wiredep": "^1.4.3",
-  "gulp-gh-pages": "~0.1.4"
+  "wiredep": "^1.4.3"
   }
 }

@@ -1,15 +1,11 @@
 'use strict';
 // generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
 
-// Set your Github Repo Here
-// Example: git@github.com:twhitacre/generator-tiy-webapp.git
-var gh_repo = '';
-
 // Require your modules
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var rimraf = require('rimraf');
-var deploy = require('gulp-gh-pages');
+var exec = require('child_process').exec;
 
 gulp.task('styles', function () {<% if (includeSass) { %>
   return gulp.src('app/styles/main.scss')
@@ -113,11 +109,7 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
+// Push a subtree from our `dist` folder
 gulp.task('deploy', function() {
-  if(gh_repo !== ''){
-    gulp.src("./dist/**/*")
-      .pipe(deploy(gh_repo, 'origin'));
-  } else {
-    console.log('Oops!! You forgot to set your `gh_repo` variable in your gulpfile.js! (line 6)');
-  }
+  exec('git subtree push --prefix dist origin gh-pages');
 });
