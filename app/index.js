@@ -83,6 +83,10 @@ AppGenerator.prototype.bower = function () {
   this.copy('bower.json', 'bower.json');
 };
 
+AppGenerator.prototype.bower = function () {
+  this.copy('bowerrc', '.bowerrc');
+};
+
 AppGenerator.prototype.editorConfig = function () {
   this.copy('editorconfig', '.editorconfig');
 };
