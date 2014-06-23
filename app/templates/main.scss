@@ -1,5 +1,8 @@
 <% if (includeBourbon) { %>
-@import 'bourbon/bourbon';
+@import '../../bower_components/bourbon/dist/bourbon';
+<% } %>
+<% if (includeNeat) { %>
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
 <% } %>
 
 body {

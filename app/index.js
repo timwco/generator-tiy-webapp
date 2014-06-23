@@ -38,6 +38,10 @@ AppGenerator.prototype.askFor = function askFor() {
       value: 'includeBourbon',
       checked: true
     }, {
+      name: 'Neat',
+      value: 'includeNeat',
+      checked: true
+    }, {
       name: 'UnderscoreJS',
       value: 'includeUnderscore',
       checked: true
@@ -59,6 +63,7 @@ AppGenerator.prototype.askFor = function askFor() {
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
     this.includeSass = hasFeature('includeSass');
     this.includeBourbon = hasFeature('includeBourbon');
+    this.includeNeat = hasFeature('includeNeat');
     this.includeModernizr = hasFeature('includeModernizr');
     this.includeUnderscore = hasFeature('includeUnderscore');
 
@@ -94,12 +99,6 @@ AppGenerator.prototype.h5bp = function () {
   this.copy('404.html', 'app/404.html');
   this.copy('robots.txt', 'app/robots.txt');
   this.copy('htaccess', 'app/.htaccess');
-};
-
-AppGenerator.prototype.bourbon = function () {
-  if (this.includeBourbon) {
-    this.directory('bourbon', 'app/styles/bourbon');
-  }
 };
 
 AppGenerator.prototype.mainStylesheet = function () {
@@ -151,7 +150,6 @@ AppGenerator.prototype.install = function () {
       wiredep({
         bowerJson: bowerJson,
         directory: 'bower_components',
-        exclude: ['bootstrap-sass'],
         src: 'app/index.html'
       });
 
