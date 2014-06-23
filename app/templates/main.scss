@@ -1,11 +1,8 @@
-// Bourbon & Neat
-<% if (includeBourbon) { %>
+<% if (includeBourbon) { %> // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 <% } %>
-
 // Custom Styles
-
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
