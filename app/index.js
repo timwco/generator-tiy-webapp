@@ -21,7 +21,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
-    this.log(yosay('Welcome to the TIY App Generator'));
+    this.log(yosay('Welcome to the TIY App Generator 1'));
     this.log(chalk.magenta('Out of the box I include HTML5 Boilerplate, Normalize, jQuery, and a gulpfile.js to build your app.'));
   }
 
@@ -34,12 +34,8 @@ AppGenerator.prototype.askFor = function askFor() {
       value: 'includeSass',
       checked: true
     }, {
-      name: 'Bourbon',
+      name: 'Bourbon & Neat',
       value: 'includeBourbon',
-      checked: true
-    }, {
-      name: 'Neat',
-      value: 'includeNeat',
       checked: true
     }, {
       name: 'UnderscoreJS',
@@ -63,7 +59,6 @@ AppGenerator.prototype.askFor = function askFor() {
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
     this.includeSass = hasFeature('includeSass');
     this.includeBourbon = hasFeature('includeBourbon');
-    this.includeNeat = hasFeature('includeNeat');
     this.includeModernizr = hasFeature('includeModernizr');
     this.includeUnderscore = hasFeature('includeUnderscore');
 

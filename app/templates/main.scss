@@ -1,9 +1,10 @@
+// Bourbon & Neat
 <% if (includeBourbon) { %>
 @import '../../bower_components/bourbon/dist/bourbon';
-<% } %>
-<% if (includeNeat) { %>
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 <% } %>
+
+// Custom Styles
 
 body {
   background: #fafafa;
