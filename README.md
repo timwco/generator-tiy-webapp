@@ -8,6 +8,7 @@ This is a simple [Yeoman](http://yeoman.io/) generator based off the [Gulp Gener
 * HTML5 Boilerplate
 * jQuery
 * Normalize
+* Mocha/Chai
 * Sass*
 * Modernizer*
 * Bourbon*
