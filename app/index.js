@@ -33,7 +33,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
-    this.log(yosay('Welcome to the TIY App Generator'));
+    this.log(yosay('Welcome to The Iron Yard App Generator'));
     this.log(chalk.magenta('Included in this generator is HTML5 Boilerplate, Normalize, jQuery, Mocha/Chai and Gulp.'));
   }
 
