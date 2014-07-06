@@ -10,7 +10,7 @@ var wiredep = require('wiredep');
 
 var AppGenerator = module.exports = function Appgenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
-  
+
   // Installing mocha using shared generator
   this.hookFor('mocha', {
     as: 'app',
@@ -21,7 +21,7 @@ var AppGenerator = module.exports = function Appgenerator(args, options, config)
       }
     }
   });
-  
+
   this.options = options;
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
@@ -34,7 +34,7 @@ AppGenerator.prototype.askFor = function askFor() {
   // welcome message
   if (!this.options['skip-welcome-message']) {
     this.log(yosay('Welcome to the TIY App Generator'));
-    this.log(chalk.magenta('Included in this generator is HTML5 Boilerplate, Normalize, jQuery and Gulp.'));
+    this.log(chalk.magenta('Included in this generator is HTML5 Boilerplate, Normalize, jQuery, Mocha/Chai and Gulp.'));
   }
 
   var prompts = [{
