@@ -132,7 +132,7 @@ gulp.task('deploy', function() {
 
 // Test your app in the browser
 // Needs to be better, but needed something quick
-gulp.task('test', function() {
+gulp.task('test-server', function() {
 
   // Open Test Page
   var connect = require('connect');

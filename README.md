@@ -40,5 +40,5 @@ There are a few specific tasks so feel free to check out the `gulpfile.js` but t
 
 * `gulp` - This will run the default and build your `dist` folder
 * `gulp watch` - Starts a server and watches for changes, also livereload
-* `gulp test` - Starts a server instance to view your Mocha tests in the browser
+* `gulp test-server` - Starts a server instance to view your Mocha tests in the browser
 * `gulp deploy` - Deploys your `dist` folder to a `gh-pages` branch as a subtree push
