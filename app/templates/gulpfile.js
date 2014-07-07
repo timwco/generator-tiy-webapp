@@ -139,6 +139,7 @@ gulp.task('test', function() {
   var app = connect()
     .use(require('connect-livereload')({port: 35729}))
     .use(connect.static('test'))
+    .use('/app', connect.static('app'))
     .use(connect.directory('test'));
 
   require('http').createServer(app)
