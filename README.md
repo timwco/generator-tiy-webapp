@@ -30,6 +30,12 @@ To update:
 npm update -g generator-tiy-webapp
 ```
 
+Check Current Version - [Current Version](https://github.com/twhitacre/generator-tiy-webapp/releases)
+
+```sh
+npm list -g  generator-tiy-webapp
+```
+
 This is used like any other Yeoman generator. Simply navigate to your new project folder and run:
 
 ```sh
