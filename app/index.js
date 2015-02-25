@@ -33,8 +33,8 @@ AppGenerator.prototype.askFor = function askFor() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
-    this.log(yosay('Welcome to The Iron Yard App Generator \n Version: ' + this.pkg.version));
-    this.log(chalk.magenta('Included in this generator is HTML5 Boilerplate, Normalize, jQuery, Mocha/Chai and Gulp.'));
+    this.log(yosay('Welcome to the TIY App Generator \n Version: ' + this.pkg.version));
+    this.log(chalk.magenta('Included in this generator is a HTML Template, Normalize, jQuery, Mocha/Chai(for testing) and Gulp.'));
   }
 
   var prompts = [{
@@ -45,14 +45,14 @@ AppGenerator.prototype.askFor = function askFor() {
       name: 'Sass',
       value: 'includeSass',
       checked: true
-    }, {
-      name: 'Bourbon & Neat',
-      value: 'includeBourbon',
-      checked: true
-    }, {
+    },{
       name: 'UnderscoreJS',
       value: 'includeUnderscore',
       checked: true
+    },{
+      name: 'Bourbon & Neat',
+      value: 'includeBourbon',
+      checked: false 
     }]
   }];
 

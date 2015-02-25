@@ -3,7 +3,6 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    <%  if (includeModernizr) { %>"modernizr": "~2.8.1",<% } %>
     <%  if (includeUnderscore) { %>"underscore": "~1.6.0",<% } %>
     <%  if (includeBourbon) { %>"bourbon": "~4.0.2",<% } %>
     <%  if (includeBourbon) { %>"neat": "~1.6.0",<% } %>
