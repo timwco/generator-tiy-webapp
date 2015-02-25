@@ -53,10 +53,6 @@ AppGenerator.prototype.askFor = function askFor() {
       name: 'UnderscoreJS',
       value: 'includeUnderscore',
       checked: true
-    }, {
-      name: 'Modernizr',
-      value: 'includeModernizr',
-      checked: true
     }]
   }];
 
@@ -71,7 +67,6 @@ AppGenerator.prototype.askFor = function askFor() {
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
     this.includeSass = hasFeature('includeSass');
     this.includeBourbon = hasFeature('includeBourbon');
-    this.includeModernizr = hasFeature('includeModernizr');
     this.includeUnderscore = hasFeature('includeUnderscore');
 
     cb();
@@ -96,7 +91,6 @@ AppGenerator.prototype.bower = function () {
 
 
 AppGenerator.prototype.editorConfig = function () {
-  this.copy('editorconfig', '.editorconfig');
   this.copy('Readme.md', 'Readme.md');
 };
 
@@ -127,7 +121,7 @@ AppGenerator.prototype.app = function () {
   this.mkdir('app/styles');
   this.mkdir('app/images');
   this.write('app/index.html', this.indexFile);
-  this.write('app/scripts/main.js', 'console.log(\'The Iron Yard Rocks\');');
+  this.write('app/scripts/main.js', 'console.log(\'JavaScript!!!\');');
 };
 
 AppGenerator.prototype.install = function () {

@@ -1,3 +1,5 @@
-## Yo, I'm a Readme
+## Readme
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+You should probably update this file.
+
+> This app was generated with the [Yeoman TIY Generator](https://github.com/twhitacre/generator-tiy-webapp)
