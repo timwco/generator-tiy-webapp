@@ -5,16 +5,16 @@ This is a simple [Yeoman](http://yeoman.io/) generator based off the [Gulp Gener
 ### What it Includes
 
 * Gulp (instead of Grunt)
-* HTML5 Boilerplate
+* HTML Template 
 * jQuery
 * Normalize
 * Mocha/Chai
-* Sass*
-* Modernizer*
-* Bourbon*
-* Underscore*
 
-_* optional during setup_
+### What is Optional
+
+* Sass
+* Bourbon & Neat
+* Underscore
 
 ### Installation & Usage
 
@@ -47,4 +47,9 @@ There are a few specific tasks so feel free to check out the `gulpfile.js` but t
 * `gulp` - This will run the default and build your `dist` folder
 * `gulp watch` - Starts a server and watches for changes, also livereload
 * `gulp test-server` - Starts a server instance to view your Mocha tests in the browser
+
+## Deploying Your App
+
+By default the `/dist` folder is now ignored by git, so if you want to push this to Github Pages, you will need to remove that from the `.gitignore` file. Once you do that, the command below will work properly.
+
 * `gulp deploy` - Deploys your `dist` folder to a `gh-pages` branch as a subtree push
