@@ -4,7 +4,7 @@ This is a simple [Yeoman](http://yeoman.io/) generator based off the [Gulp Gener
 
 ### What it Includes
 
-* Gulp (instead of Grunt)
+* Gulp 
 * HTML Template 
 * jQuery
 * Normalize
@@ -41,6 +41,8 @@ This is used like any other Yeoman generator. Simply navigate to your new projec
 ```sh
 yo tiy-webapp
 ```
+
+## Gulp Tasks
 
 There are a few specific tasks so feel free to check out the `gulpfile.js` but the four most used ones will be.
 
