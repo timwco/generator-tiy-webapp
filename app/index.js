@@ -88,7 +88,6 @@ AppGenerator.prototype.packageJSON = function () {
 
 AppGenerator.prototype.git = function () {
   this.copy('gitignore', '.gitignore');
-  this.copy('gitattributes', '.gitattributes');
 };
 
 AppGenerator.prototype.bower = function () {
@@ -103,9 +102,6 @@ AppGenerator.prototype.editorConfig = function () {
 
 AppGenerator.prototype.h5bp = function () {
   this.copy('favicon.ico', 'app/favicon.ico');
-  this.copy('404.html', 'app/404.html');
-  this.copy('robots.txt', 'app/robots.txt');
-  this.copy('htaccess', 'app/.htaccess');
 };
 
 AppGenerator.prototype.mainStylesheet = function () {
